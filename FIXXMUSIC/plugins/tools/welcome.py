@@ -42,10 +42,10 @@ def circle(pfp, size=(500, 500)):
     pfp.putalpha(mask)
     return pfp
 
-def welcomepic(pic, user, chatname, id, uname):
+def welcomepic(pic, user, chatname, id, uname,brightness_factor=1.3):
     background = Image.open("FIXXMUSIC/assets/wel2.jpg")
     pfp = Image.open(pic).convert("RGBA")
-    pfp = circle(pfp)
+    pfp = circle(pfp, brightness_factor=brightness_factor)
     pfp = pfp.resize((825, 824))
     draw = ImageDraw.Draw(background)
     font = ImageFont.truetype('FIXXMUSIC/assets/font.ttf', size=110)
@@ -94,7 +94,7 @@ async def greet_group(_, member: ChatMemberUpdated):
 ๏ 𝐌𝐀𝐃𝐄 𝐁𝐘 ➠ @Vashu23456
 ➖➖➖➖➖➖➖➖➖➖➖
 """,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/BRANDED_KUDI_BOT?startgroup=true")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/FIX_X_MUSIC_V_BOT?startgroup=true")]])
         )
     except Exception as e:
         LOGGER.error(e)

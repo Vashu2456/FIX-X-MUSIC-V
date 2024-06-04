@@ -32,7 +32,7 @@
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʟᴏᴄᴀʟ ʜᴏsᴛ/ ᴠᴘs 」─
 </h3>
 
-- Get your [Necessary Variables](https://github.com/AtulxD/FIXXMUSICV/blob/master/sample.env)
+- Get your [Necessary Variables](https://github.com/Vashu2456/FIX-X-MUSIC-V/blob/master/sample.env)
 - Upgrade and Update by :
 `sudo apt-get update && sudo apt-get upgrade -y`
 - Install Ffmpeg by :
@@ -44,7 +44,7 @@
 - Install Node js by :
 `curl -fssL https://deb.nodesource.com/setup_19.x | sudo -E bash - && sudo apt-get install nodejs -y && npm i -g npm`
 - Clone the repository by :
-`git clone https://github.com/AtulxD/FIXXMUSICV X && cd FIXXMUSICV`
+`git clone https://github.com/Vashu2456/FIX-X-MUSIC-V X && cd FIX-X-MUSIC-V`
 - Install requirements by :
 `pip3 install -U -r requirements.txt`
 - Fill your variables in the env by :
@@ -129,7 +129,7 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 <a href="https://github.com/Vashu2456"> <img src="https://img.shields.io/badge/VASHU-black?style=for-the-badge&logo=github" alt="VASHU" /> </a>
 </p>
 
-- <b> _sᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ [VASHU](https://github.com/Vashu2456) ғᴏʀ [FIXXMUSIC](https://github.com/Vashu2456/FIXXMUSICV)_ </b>
+- <b> _sᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ [VASHU](https://github.com/Vashu2456) ғᴏʀ [FIX-X-MUSIC-V](https://github.com/Vashu2456/FIX-XMUSIC-V)_ </b>
 
 <h3 align="center">──「 ʀᴇᴘᴏ sᴛᴀᴛs 」──</h3>
-<a href="https://github.com/Vashu2456/FIXXMUSICV"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Vashu2456&repo=FIXXMUSICV&theme=chartreuse-dark"></a>
+<a href="https://github.com/Vashu2456/FIX-X-MUSIC-V"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Vashu2456&repo=FIX-X-MUSIC-V&theme=chartreuse-dark"></a>

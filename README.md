@@ -89,7 +89,8 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
     ─「 𝘾𝙊𝙉𝙏𝙍𝙄𝘽𝙐𝙏𝙀𝙍𝙎 」─
 </h3>
 
-![Contributors](https://contrib.rocks/image?repo=Botmaker456/SUPER---NAME)
+[![Contributors](https://contrib.rocks/image?repo=Vashu2456/FIX-X-MUSIC-V)](https://github.com/Vashu2456/FIX-X-MUSIC-V/graphs/contributors)
+
 
 
 

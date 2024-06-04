@@ -55,7 +55,7 @@ UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
     "https://github.com/Vashu2456/FIXXMUSICV",
 )
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Main")
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # ----------------------------------------------------------------

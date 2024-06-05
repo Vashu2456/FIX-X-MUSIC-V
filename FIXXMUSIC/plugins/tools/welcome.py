@@ -11,7 +11,7 @@ class WelDatabase:
     def init(self):
         self.data = {}
 
-    async def find_one(self, chat_id):
+     async def find_one(self, chat_id):
         return chat_id in self.data
 
     async def add_wlcm(self, chat_id):

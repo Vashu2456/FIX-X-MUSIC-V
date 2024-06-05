@@ -80,7 +80,7 @@ async def greet_group(_, member: ChatMemberUpdated):
             LOGGER.error(e)
     try:
         welcomeimg = welcomepic(
-            pic, user.first_name, member.chat.title, user.id, user.username, user.userbio
+            pic, user.first_name, member.chat.title, user.id, user.username
         )
         temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
             member.chat.id,

@@ -26,13 +26,17 @@ from FIXXMUSIC.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
-random_photo = [
+#--------------------------
+
+NEXI_VID = [
 "https://telegra.ph/file/75a1da8f18bb0abdf72f3.jpg",
 "https://telegra.ph/file/75a1da8f18bb0abdf72f3.jpg",
 "https://telegra.ph/file/75a1da8f18bb0abdf72f3.jpg",
 "https://telegra.ph/file/75a1da8f18bb0abdf72f3.jpg",
+"https://telegra.ph/file/75a1da8f18bb0abdf72f3.jpg",
+"https://telegra.ph/file/75a1da8f18bb0abdf72f3.jpg",
+
 ]
-#--------------------------------------------------------------------#
 
 
 

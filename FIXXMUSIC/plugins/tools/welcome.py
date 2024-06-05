@@ -42,16 +42,19 @@ def circle(pfp, size=(500, 500)):
     pfp.putalpha(mask)
     return pfp
 
+
 def welcomepic(pic, user, chatname, id, uname):
-    background = Image.open("FIXXMUSIC/assets/wel2.jpg")
+    background = Image.open("FIXXMUSIC/assets/dil.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp)
-    pfp = pfp.resize((825, 824))
+    pfp = pfp.resize((1157, 1158))
     draw = ImageDraw.Draw(background)
     font = ImageFont.truetype('FIXXMUSIC/assets/font.ttf', size=110)
     welcome_font = ImageFont.truetype('FIXXMUSIC/assets/font.ttf', size=60)
-    draw.text((2100, 1420), f'ID: {id}', fill=(12000, 12000, 12000), font=font)
-    pfp_position = (1990, 435)
+    draw.text((1800, 700), f'NAME: {user}', fill=(255, 255, 255), font=font)
+    draw.text((1800, 830), f'ID: {id}', fill=(255, 255, 255), font=font)
+    draw.text((1800, 965), f"USERNAME : {uname}", fill=(255, 255, 255), font=font)
+    pfp_position = (391, 336)
     background.paste(pfp, pfp_position, pfp)
     background.save(f"downloads/welcome#{id}.png")
     return f"downloads/welcome#{id}.png"
@@ -72,7 +75,7 @@ async def greet_group(_, member: ChatMemberUpdated):
             user.photo.big_file_id, file_name=f"pp{user.id}.png"
         )
     except AttributeError:
-        pic = "FIXXMUSIC/assets/wel2.png"
+        pic = "FIXXMUSIC/assets/dil.png"
     if (temp.MELCOW).get(f"welcome-{member.chat.id}") is not None:
         try:
             await temp.MELCOW[f"welcome-{member.chat.id}"].delete()
@@ -86,15 +89,14 @@ async def greet_group(_, member: ChatMemberUpdated):
             member.chat.id,
             photo=welcomeimg,
             caption=f"""
-𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗧𝗼 {member.chat.title}
-➖➖➖➖➖➖➖➖➖➖➖
-๏ 𝗡𝗔𝗠𝗘 ➠ {user.mention}
-๏ 𝗜𝗗 ➠ {user.id}
-๏ 𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄 ➠ @{user.username}
-๏ 𝐌𝐀𝐃𝐄 𝐁𝐘 ➠ @Vashu23456
-➖➖➖➖➖➖➖➖➖➖➖
+Wᴇʟᴄᴏᴍᴇ Tᴏ {member.chat.title}
+➖➖➖➖➖➖➖➖➖➖➖➖
+Nᴀᴍᴇ ✧ {user.mention}
+Iᴅ ✧ {user.id}
+Usᴇʀɴᴀᴍᴇ ✧ @{user.username}
+➖➖➖➖➖➖➖➖➖➖➖➖
 """,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/FIX_X_MUSIC_V_BOT?startgroup=true")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/Alone_Dil_bot?startgroup=true")]])
         )
     except Exception as e:
         LOGGER.error(e)
@@ -110,9 +112,9 @@ async def bot_wel(_, message):
         if u.id == app.me.id:
             await app.send_message(LOG_CHANNEL_ID, f"""
 NEW GROUP
-➖➖➖➖➖➖➖➖➖➖➖
-𝗡𝗔𝗠𝗘: {message.chat.title}
-𝗜𝗗: {message.chat.id}
-𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄: @{message.chat.username}
-➖➖➖➖➖➖➖➖➖➖➖
+➖➖➖➖➖➖➖➖➖➖➖➖
+NAME: {message.chat.title}
+ID: {message.chat.id}
+USERNAME: @{message.chat.username}
+➖➖➖➖➖➖➖➖➖➖➖➖
 """)

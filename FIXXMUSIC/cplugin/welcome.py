@@ -1,15 +1,52 @@
+from pyrogram import Client, filters
+from pyrogram.enums import ChatMemberStatus
+from pyrogram.errors import (
+    ChatAdminRequired,
+    InviteRequestSent,
+    UserAlreadyParticipant,
+    UserNotParticipant,
+)
+from pyrogram.errors import RPCError
+from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboardButton
+from os import environ
+from typing import Union, Optional
+from PIL import Image, ImageDraw, ImageFont
+from os import environ
+import requests
+import random
+from FIXXMUSIC import userbot
+from FIXXMUSIC.misc import SUDOERS
+from pyrogram import *
+from pyrogram.types import *
+from FIXXMUSIC.utils.branded_ban import admin_filter
+import random
+from pyrogram import Client, filters
+from pyrogram.types import ChatJoinRequest, InlineKeyboardButton, InlineKeyboardMarkup
+from PIL import Image, ImageDraw, ImageFont
+import asyncio, os, time, aiohttp
+from pathlib import Path
+from PIL import Image, ImageDraw, ImageFont, ImageEnhance
+from asyncio import sleep
+from pyrogram import filters, Client, enums
+from pyrogram.enums import ParseMode
+from pyrogram import *
+from pyrogram.types import *
+from logging import getLogger
+from FIXXMUSIC.utils.branded_ban import admin_filter
+import os
+from FIXXMUSIC.misc import SUDOERS
+from PIL import ImageDraw, Image, ImageFont, ImageChops
+from pyrogram import *
+from pyrogram.types import *
 from logging import getLogger
 
-from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFont
-from pyrogram import Client, enums, filters
-from pyrogram.types import ChatMemberUpdated, InlineKeyboardButton, InlineKeyboardMarkup
 
 random_photo = [
-    "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
-    "https://telegra.ph/file/3ef2cc0ad2bc548bafb30.jpg",
-    "https://telegra.ph/file/a7d663cd2de689b811729.jpg",
-    "https://telegra.ph/file/6f19dc23847f5b005e922.jpg",
-    "https://telegra.ph/file/2973150dd62fd27a3a6ba.jpg",
+    "https://graph.org/file/e36ca3c73f08d4c04b9b6.jpg",
+    "https://graph.org/file/970955ce30672302943c1.jpg",
+    "https://graph.org/file/e38d003cff04e6dffb5b2.jpg",
+    "https://graph.org/file/98f6187aa4d3d3954ccdc.jpg",
+    "https://graph.org/file/f4b34351a59061ba1c61b.jpg",
 ]
 # --------------------------------------------------------------------------------- #
 
@@ -207,7 +244,7 @@ async def greet_new_member(
                 pic, user.first_name, member.chat.title, user.id, user.username
             )
             button_text = "๏ ᴠɪᴇᴡ ɴᴇᴡ ᴍᴇᴍʙᴇʀ ๏"
-            add_button_text = "๏ 𝐀𝐃𝐃 𝐌𝐄 𝐁𝐀𝐁𝐘 𝐈𝐍 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ๏"
+            add_button_text = "๏ 𝐀𝐃𝐃 𝐌𝐄 𝐁𝐀𝐁𝐘 ๏"
             deep_link = f"{user.id}"
             add_link = f"https://t.me/FIX_X_MUSIC_V_BOT?startgroup=true"
             temp.MELCOW[f"welcome-{member.chat.id}"] = await client.send_photo(
@@ -215,15 +252,13 @@ async def greet_new_member(
                 photo=welcomeimg,
                 caption=f"""
 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗧𝗼 {member.chat.title}
-➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+➖➖➖➖➖➖➖➖➖➖➖
 ๏ 𝗡𝗔𝗠𝗘 ✧ {user.mention}
 ๏ 𝗜𝗗 ✧ {user.id}
 ๏ 𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄 ✧ @{user.username}
 ๏ 𝐌𝐀𝐃𝐄 𝐁𝐘 ✧ @Vashu23456
-๏ ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀ𝐬 ✧ {count}
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-
-
+๏ 𝐓𝐎𝐓𝐀𝐋 𝐌𝐄𝐌𝐁𝐄𝐑𝐒 ✧ {count}
+➖➖➖➖➖➖➖➖➖➖➖
 """,
                 reply_markup=InlineKeyboardMarkup(
                     [

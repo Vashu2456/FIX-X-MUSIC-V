@@ -121,7 +121,8 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 
 - [Vashu2456](https://telegram.dog/Vashu23456)
 - [Vashu2456](https://github.com/Vashu2456)
-- [Botmaker456](https://github.com/Botmaker456)
+- [ᴡᴄɢᴋɪɴɢ](https://github.com/WCGKING)
+- [ʙʀᴀɴᴅᴇᴅ ᴋɪɴɢ](https://telegram.dog/BRANDED_PAID_CC)
 </details>
 
 </h3>
@@ -130,7 +131,7 @@ Press `Ctrl+C` when you're done with editing env and `:wq` to save the env<br>
 <a href="https://github.com/Vashu2456"> <img src="https://img.shields.io/badge/VASHU-black?style=for-the-badge&logo=github" alt="VASHU" /> </a>
 </p>
 
-- <b> _sᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ [VASHU](https://github.com/Vashu2456) ғᴏʀ [FIX-X-MUSIC-V](https://github.com/Vashu2456/FIX-XMUSIC-V)_ </b>
-
 <h3 align="center">──「 ʀᴇᴘᴏ sᴛᴀᴛs 」──</h3>
 <a href="https://github.com/Vashu2456/FIX-X-MUSIC-V"><img src="https://github-readme-stats.vercel.app/api/pin/?username=Vashu2456&repo=FIX-X-MUSIC-V&theme=chartreuse-dark"></a>
+
+- <b> _sᴩᴇᴄɪᴀʟ ᴛʜᴀɴᴋs ᴛᴏ [ᴛᴇᴀᴍ ʙʀᴀɴᴅᴇᴅ](https://github.com/WCGKING) ғᴏʀ [ʙʀᴀɴᴅᴇᴅ ᴍᴜsɪᴄ ʙᴏᴛ](https://t.me/BRANDRD_BOT)_</b>

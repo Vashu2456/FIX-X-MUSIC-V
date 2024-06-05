@@ -5,7 +5,7 @@ from FIXXMUSIC import app
 
 #--------------------------
 
-MUST_JOIN = "Vashu56789"
+MUST_JOIN = "Vashu123vg"
 #------------------------
 @app.on_message(filters.incoming & filters.private, group=-1)
 async def must_join_channel(app: Client, msg: Message):

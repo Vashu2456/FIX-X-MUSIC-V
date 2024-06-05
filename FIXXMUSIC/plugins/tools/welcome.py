@@ -8,10 +8,10 @@ from FIXXMUSIC import app
 LOGGER = getLogger(__name__)
 
 class WelDatabase:
-    def init(self):
+    def __init__(self):
         self.data = {}
 
-     async def find_one(self, chat_id):
+    async def find_one(self, chat_id):
         return chat_id in self.data
 
     async def add_wlcm(self, chat_id):
@@ -42,20 +42,16 @@ def circle(pfp, size=(500, 500)):
     pfp.putalpha(mask)
     return pfp
 
-
-def welcomepic(pic, user, chatname, id, uname, userbio):
+def welcomepic(pic, user, chatname, id, uname):
     background = Image.open("FIXXMUSIC/assets/wel2.jpg")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp)
-    pfp = pfp.resize((1157, 1158))
+    pfp = pfp.resize((825, 824))
     draw = ImageDraw.Draw(background)
     font = ImageFont.truetype('FIXXMUSIC/assets/font.ttf', size=110)
     welcome_font = ImageFont.truetype('FIXXMUSIC/assets/font.ttf', size=60)
-    draw.text((1800, 700), f'NAME: {user}', fill=(255, 255, 255), font=font)
-    draw.text((1800, 830), f'ID: {id}', fill=(255, 255, 255), font=font)
-    draw.text((1800, 965), f"USERNAME : {uname}", fill=(255, 255, 255), font=font)
-    draw.text((1800, 700), f'BIO: {user}', fill=(255, 255, 255), font=font)
-    pfp_position = (391, 336)
+    draw.text((2100, 1420), f'ID: {id}', fill=(12000, 12000, 12000), font=font)
+    pfp_position = (1990, 435)
     background.paste(pfp, pfp_position, pfp)
     background.save(f"downloads/welcome#{id}.png")
     return f"downloads/welcome#{id}.png"
@@ -84,24 +80,23 @@ async def greet_group(_, member: ChatMemberUpdated):
             LOGGER.error(e)
     try:
         welcomeimg = welcomepic(
-            pic, user.first_name, member.chat.title, user.id, user.username, user. userbio
+            pic, user.first_name, member.chat.title, user.id, user.username, user.userbio
         )
         temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
             member.chat.id,
             photo=welcomeimg,
             caption=f"""
+
 𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗧𝗼 {member.chat.title}
-➖➖➖➖➖➖➖➖➖➖➖
+➖➖➖➖➖➖➖➖➖➖➖➖
 ๏ 𝗡𝗔𝗠𝗘 ✧ {user.mention}
 ๏ 𝗜𝗗 ✧ {user.id}
 ๏ 𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄 ✧ @{user.username}
 ๏ 𝐌𝐀𝐃𝐄 𝐁𝐘 ✧ @Vashu23456
 ๏ 𝐁𝐈𝐎 ✧ {user.userbio}
-➖➖➖➖➖➖➖➖➖➖➖
-
+➖➖➖➖➖➖➖➖➖➖➖➖
 """,
-
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/?startgroup=FIX_X_MUSIC_V_BOT=true")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ 𝐀𝐃𝐃 𝐌𝐄 𝐁𝐀𝐁𝐘 𝐈𝐍 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ⦿", url=f"https://t.me/FIX_X_MUSIC_V_BOT?startgroup=true")]])
         )
     except Exception as e:
         LOGGER.error(e)
@@ -117,9 +112,9 @@ async def bot_wel(_, message):
         if u.id == app.me.id:
             await app.send_message(LOG_CHANNEL_ID, f"""
 NEW GROUP
-➖➖➖➖➖➖➖➖➖➖➖➖
-NAME: {message.chat.title}
-ID: {message.chat.id}
-USERNAME: @{message.chat.username}
-➖➖➖➖➖➖➖➖➖➖➖➖
+➖➖➖➖➖➖➖➖➖➖➖
+𝗡𝗔𝗠𝗘: {message.chat.title}
+𝗜𝗗: {message.chat.id}
+𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄: @{message.chat.username}
+➖➖➖➖➖➖➖➖➖➖➖
 """)

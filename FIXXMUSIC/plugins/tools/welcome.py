@@ -1,4 +1,3 @@
-
 import os
 from PIL import ImageDraw, Image, ImageFont, ImageChops
 from pyrogram import *
@@ -6,7 +5,7 @@ from pyrogram.types import *
 from logging import getLogger
 from FIXXMUSIC import app
 
-LOGGER = getLogger(name)
+LOGGER = getLogger(__name__)
 
 class WelDatabase:
     def init(self):

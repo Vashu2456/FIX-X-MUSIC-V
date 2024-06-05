@@ -1,5 +1,5 @@
 <h2 align="center">
-    ──「 FIX X Music 」──
+    ──「 𝐅𝐈𝐗𝐗 𝐌𝐔𝐒𝐈𝐂 」──
 </h2>
 
 <p align="center">

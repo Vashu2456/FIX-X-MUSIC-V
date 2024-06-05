@@ -41,11 +41,7 @@ import asyncio
 import random
 from pyrogram import Client, filters
 from pyrogram.enums import ChatMemberStatus
-from pyrogram.errors import (
-   InviteRequestSent,
-   UserAlreadyParticipant,
-   UserNotParticipant,
-)
+from pyrogram.errors import 
 from FIXXMUSIC.utils.database import get_assistant, is_active_chat
 
 LOGGER = getLogger(name)

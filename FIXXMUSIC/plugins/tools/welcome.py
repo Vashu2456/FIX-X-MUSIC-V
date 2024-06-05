@@ -93,7 +93,6 @@ async def greet_group(_, member: ChatMemberUpdated):
 ๏ 𝗜𝗗 ✧ {user.id}
 ๏ 𝐔𝐒𝐄𝐑𝐍𝐀𝐌𝐄 ✧ @{user.username}
 ๏ 𝐌𝐀𝐃𝐄 𝐁𝐘 ✧ @Vashu23456
-๏ 𝐁𝐈𝐎 ✧ {user.userbio}
 ➖➖➖➖➖➖➖➖➖➖➖➖
 """,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ 𝐀𝐃𝐃 𝐌𝐄 𝐁𝐀𝐁𝐘 𝐈𝐍 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ⦿", url=f"https://t.me/FIX_X_MUSIC_V_BOT?startgroup=true")]])

@@ -26,16 +26,10 @@ from FIXXMUSIC.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
-#--------------------------
-
-NEXI_VID = [
-"https://telegra.ph/file/fb981c15b8555e3192a5b.mp4",
-"https://telegra.ph/file/fb981c15b8555e3192a5b.mp4",
-"https://telegra.ph/file/fb981c15b8555e3192a5b.mp4",
-"https://telegra.ph/file/fb981c15b8555e3192a5b.mp4",
-"https://telegra.ph/file/fb981c15b8555e3192a5b.mp4",
-"https://telegra.ph/file/fb981c15b8555e3192a5b.mp4",
-
+YUMI_PICS = [
+    "https://graph.org/file/f076ff205c6ce6c554b25.jpg",
+    "https://graph.org/file/de80d107a62ce5c987ce8.jpg",
+    "https://graph.org/file/fc1caf40a0be6d3560e3a.jpg",
 ]
 
 

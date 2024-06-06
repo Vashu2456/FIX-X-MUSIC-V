@@ -27,9 +27,9 @@ from config import BANNED_USERS
 from strings import get_string
 
 YUMI_PICS = [
-    "https://graph.org/file/f076ff205c6ce6c554b25.jpg",
-    "https://graph.org/file/de80d107a62ce5c987ce8.jpg",
-    "https://graph.org/file/fc1caf40a0be6d3560e3a.jpg",
+    "https://telegra.ph/file/dde8e7c1cabff6ef6bf5e.jpg",
+    "https://telegra.ph/file/1acef620ea06b70582e6c.jpg",
+    "https://telegra.ph/file/2c980c29ffaa10a4ac499.jpg",
 ]
 
 

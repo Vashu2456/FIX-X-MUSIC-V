@@ -41,7 +41,7 @@ MESSAGE = f"""**๏ ᴛʜɪs ɪs ᴛʜᴇ ᴀᴅᴠᴀɴᴄᴇ ᴍᴜsɪᴄ ᴘ�
 BUTTON = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("๏ 𝐀𝐃𝐃 𝐌𝐄 𝐁𝐀𝐁𝐘 💞 ๏", url=f"https://t.me/{app.username}?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users")
+            InlineKeyboardButton("๏ 𝐓𝐀𝐏 𝐓𝐎 𝐒𝐄𝐄 𝐌𝐀𝐆𝐈𝐂 ✨ ๏", url=f"https://t.me/{app.username}?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users")
         ]
     ]
 )

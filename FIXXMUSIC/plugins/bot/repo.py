@@ -31,7 +31,7 @@ start_txt = """**
 async def start(_, msg):
     buttons = [
         [ 
-          InlineKeyboardButton("𝘼𝘿𝘿 𝙈𝙀 𝙄𝙉 𝙔𝙊𝙐𝙍 𝙂𝙍𝙊𝙐𝙋 𝘽𝘼𝘽𝙔 ❤️‍🩹🍃", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+          InlineKeyboardButton("𝐓𝐀𝐏 𝐓𝐎 𝐒𝐄𝐄 𝐘𝐎𝐔𝐒 𝐒𝐄𝐂𝐑𝐄𝐓𝐒 💀", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
           InlineKeyboardButton("❥︎ Gʀᴏᴜᴘ 1 💗🍃", url="https://t.me/Vashu123vg"),
@@ -66,7 +66,7 @@ InlineKeyboardButton("𝐎ᴡɴᴇʀ ♕︎", url=f"https://t.me/Vashu23456"),
 @capture_err
 async def repo(_, message):
     async with httpx.AsyncClient() as client:
-        response = await client.get("https://github.com/Vashu2456/FIXXMUSICV/graphs/commit-activity")
+        response = await client.get("https://github.com/Vashu2456/FIX-X-MUSIC-V/graphs/commit-activity")
     
     if response.status_code == 200:
         users = response.json()
@@ -76,7 +76,7 @@ async def repo(_, message):
             list_of_users += f"{count}. [{user['login']}]({user['html_url']})\n"
             count += 1
 
-        text = f"""[𝖱𝖤𝖯𝖮 𝖫𝖨𝖭𝖪](https://github.com/Vashu2456/FIXXMUSICV) | [𝖦𝖱𝖮𝖴𝖯](https://t.me/Vashu123vg)
+        text = f"""[𝖱𝖤𝖯𝖮 𝖫𝖨𝖭𝖪](https://github.com/Vashu2456/FIX-X-MUSIC-V) | [𝖦𝖱𝖮𝖴𝖯](https://t.me/Vashu123vg)
 | 𝖢𝖮𝖭𝖳𝖱𝖨𝖡𝖴𝖳𝖮𝖱𝖲 |
 ----------------
 {list_of_users}"""

@@ -26,17 +26,12 @@ from FIXXMUSIC.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
-#--------------------------
-
-NEXI_VID = [
-"https://telegra.ph/file/fb981c15b8555e3192a5b.mp4",
-"https://telegra.ph/file/fb981c15b8555e3192a5b.mp4",
-"https://telegra.ph/file/fb981c15b8555e3192a5b.mp4",
-"https://telegra.ph/file/fb981c15b8555e3192a5b.mp4",
-"https://telegra.ph/file/fb981c15b8555e3192a5b.mp4",
-"https://telegra.ph/file/fb981c15b8555e3192a5b.mp4",
-
+YUMI_PICS = [
+    "https://graph.org/file/f076ff205c6ce6c554b25.jpg",
+    "https://graph.org/file/de80d107a62ce5c987ce8.jpg",
+    "https://graph.org/file/fc1caf40a0be6d3560e3a.jpg",
 ]
+
 
 
 
@@ -48,8 +43,8 @@ async def start_pm(client, message: Message, _):
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            return await message.reply_video(
-                random.choice(NEXI_VID),
+            return await message.reply_photo(
+                random.choice(YUMI_PICS),
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
                 reply_markup=keyboard,
             )
@@ -100,8 +95,8 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
-        await message.reply_video(
-            random.choice(NEXI_VID),
+        await message.reply_photo(
+            random.choice(YUMI_PICS),
             caption=_["start_2"].format(message.from_user.mention, app.mention),
             reply_markup=InlineKeyboardMarkup(out),
         )
@@ -117,8 +112,8 @@ async def start_pm(client, message: Message, _):
 async def start_gp(client, message: Message, _):
     out = start_panel(_)
     uptime = int(time.time() - _boot_)
-    await message.reply_video(
-        random.choice(NEXI_VID),
+    await message.reply_photo(
+        random.choice(YUMI_PICS),
         caption=_["start_1"].format(app.mention, get_readable_time(uptime)),
         reply_markup=InlineKeyboardMarkup(out),
     )
@@ -152,8 +147,8 @@ async def welcome(client, message: Message):
                     return await app.leave_chat(message.chat.id)
 
                 out = start_panel(_)
-                await message.reply_video(
-                    random.choice(NEXI_VID),
+                await message.reply_photo(
+                    random.choice(YUMI_PICS),
                     caption=_["start_3"].format(
                         message.from_user.mention,
                         app.mention,

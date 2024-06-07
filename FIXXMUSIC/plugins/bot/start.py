@@ -33,7 +33,7 @@ YUMI_PICS = [
 ]
 
 start = f"""
-❖ 𝙄 𝘼𝙈  𓆩{1} 
+❖ 𝙄 𝘼𝙈  𓆩{} 
  
 ❖ 𝙄 𝙃𝘼𝙑𝙀 𝙎𝙊𝙈𝙀 𝙎𝙋𝙀𝘾𝙄𝘼𝙇 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎 
  
@@ -55,7 +55,7 @@ start = f"""
  ✧𝙏𝘼𝙂𝙎,𝙑𝘾𝙏𝘼𝙂𝙎,𝙈𝙀𝙉𝙏𝙄𝙊𝙉,𝙎𝙋𝘼𝙈.𝙀𝙏𝘾  
 |-----------------------------------|  
   
-𝙉𝙄𝘾𝙀 𝙏𝙊 𝙈𝙀𝙀𝙏 {0} ^^
+𝙉𝙄𝘾𝙀 𝙏𝙊 𝙈𝙀𝙀𝙏 {} ^^
 
 """
 
@@ -121,7 +121,7 @@ async def start_pm(client, message: Message, _):
         out = private_panel(_)
         await message.reply_photo(
             random.choice(YUMI_PICS),
-            caption=start.format(message.from_user.mention, app.mention),
+            caption=start.format(app.mention, message.from_user.mention),
             reply_markup=InlineKeyboardMarkup(out),
         )
         if await is_on_off(2):

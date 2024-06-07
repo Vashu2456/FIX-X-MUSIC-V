@@ -94,7 +94,7 @@ async def start_pm(client, message: Message, _):
         out = private_panel(_)
         await message.reply_photo(
             random.choice(YUMI_PICS),
-            caption=_[start_2].format(app.mention, message.from_user.mention),
+            caption=_["start_2"].format(app.mention, message.from_user.mention),
             reply_markup=InlineKeyboardMarkup(out),
         )
         if await is_on_off(2):

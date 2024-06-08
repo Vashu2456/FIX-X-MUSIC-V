@@ -14,8 +14,8 @@ from FIXXMUSIC.mongo.couples_db import _get_image, get_couple
 POLICE = [
     [
         InlineKeyboardButton(
-            text="𓊈𒆜彡[ 𝐁𝐄𝐒𝐓 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐅𝐎𝐑𝐄𝐕𝐄𝐑 ]彡𒆜𓊉",
-            url=f"https://https://t.me/Vashu123vg",
+            text="𓊈𒆜彡[𝐁𝐄𝐒𝐓 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐅𝐎𝐑𝐄𝐕𝐄𝐑 ]彡𒆜𓊉",
+            url=f"https://t.me/Vashu123vg",
         ),
     ],
 ]
@@ -41,7 +41,7 @@ def dt_tom():
 tomorrow = str(dt_tom())
 today = str(dt()[0])
 
-@app.on_message(filters.command(["couples","vcls"]))
+@app.on_message(filters.command("couples"))
 async def ctest(_, message):
     cid = message.chat.id
     if message.chat.type == ChatType.PRIVATE:

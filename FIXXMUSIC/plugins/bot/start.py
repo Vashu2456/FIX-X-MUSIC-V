@@ -28,7 +28,7 @@ from strings import get_string
 
 YUMI_PICS = [
     "https://telegra.ph/file/dde8e7c1cabff6ef6bf5e.jpg",
-    "https://telegra.ph/file/1acef620ea06b70582e6c.jpg",
+    "https://telegra.ph/file/df28c54b7cb894ca01877.jpg",
     "https://telegra.ph/file/2c980c29ffaa10a4ac499.jpg",
 ]
 

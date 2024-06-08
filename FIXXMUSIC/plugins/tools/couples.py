@@ -14,7 +14,7 @@ from FIXXMUSIC.mongo.couples_db import _get_image, get_couple
 POLICE = [
     [
         InlineKeyboardButton(
-            text="𓊈𒆜彡[ 𝙑𝘼𝙎𝙃𝙐 ]彡𒆜𓊉",
+            text="𓊈𒆜彡[ 𝐁𝐄𝐒𝐓 𝐅𝐑𝐈𝐄𝐍𝐃𝐒 𝐅𝐎𝐑𝐄𝐕𝐄𝐑 ]彡𒆜𓊉",
             url=f"https://https://t.me/Vashu123vg",
         ),
     ],

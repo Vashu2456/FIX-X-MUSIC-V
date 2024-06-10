@@ -42,7 +42,7 @@ async def couples(app, message):
         try:
             p1 = await app.download_media(photo1.big_file_id, file_name="pfp.png")
         except Exception:
-            p1 = "assets/upic.png"
+            p1 = "FIXXMUSIC/assets/upic.png"
         try:
             p2 = await app.download_media(photo2.big_file_id, file_name="pfp1.png")
         except Exception:
